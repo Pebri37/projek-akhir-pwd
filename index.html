@@ -28,16 +28,20 @@
           </div>
           <div class="nav-list">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Genre</a></li>
-              <li><a href="#">Populer</a></li>
-              <li><a href="#">Kanvas</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="genre.html">Genre</a></li>
+              <li><a href="populer.html">Populer</a></li>
+              <li><a href="kanvas.html">Kanvas</a></li>
             </ul>
           </div>
           <div class="right-list">
             <ul>
-              <li><a href="#">Masuk</a></li>
-              <li><a href="#">Daftar</a></li>
+              <li><a href="login.html">Masuk</a></li>
+              <select id="daftar-role" class="dropdown-daftar">
+                <option selected hidden>Daftar</option>
+                <option value="daftar-pembaca.php">Pembaca</option>
+                <option value="daftar-author.php">Author</option>
+              </select>
             </ul>
           </div>
         </nav>
@@ -67,7 +71,6 @@
 
       <div class="container">
         <div class="card">
-
           <section class="populer">
             <h1>Populer</h1>
             <div class="row">
@@ -144,7 +147,9 @@
         </div>
 
         <section class="terbaru">
-          <h2 style="text-align: center;">Baca Komik <span class="highlight">Terbaru</span></h2>
+          <h2 style="text-align: center">
+            Baca Komik <span class="highlight">Terbaru</span>
+          </h2>
           <div class="comic-list">
             <div class="comic-card">
               <img
@@ -157,6 +162,7 @@
                 <button class="chapter-btn">Chapter 1</button>
               </div>
             </div>
+
             <div class="comic-card">
               <img
                 src="https://cover.komiku.id/wp-content/uploads/Manga-Dr-Stone.png?resize=240,150"
@@ -168,18 +174,7 @@
                 <button class="chapter-btn">Chapter 230</button>
               </div>
             </div>
-            
-             <div class="comic-card">
-              <img
-                src="https://cover.komiku.id/wp-content/uploads/Manga-Dr-Stone.png?resize=240,150"
-                alt="Cover Komik"
-              />
-              <div class="comic-info">
-                <h3>Dr. Stone</h3>
-                <p class="genre">Manga Petualangan 3 jam lalu</p>
-                <button class="chapter-btn">Chapter 230</button>
-              </div>
-            </div>
+
             <div class="comic-card">
               <img
                 src="https://cover.komiku.id/wp-content/uploads/Manga-Dr-Stone.png?resize=240,150"
@@ -191,63 +186,100 @@
                 <button class="chapter-btn">Chapter 230</button>
               </div>
             </div>
+
+            <div class="comic-card">
+              <img
+                src="https://cover.komiku.id/wp-content/uploads/Manga-Dr-Stone.png?resize=240,150"
+                alt="Cover Komik"
+              />
+              <div class="comic-info">
+                <h3>Dr. Stone</h3>
+                <p class="genre">Manga Petualangan 3 jam lalu</p>
+                <button class="chapter-btn">Chapter 230</button>
+              </div>
             </div>
           </div>
         </section>
 
-        <!-- KANVAS SECTION -->
-<section class="kanvas-section">
-  <div class="kanvas-info">
-    <h2>KANVAS</h2>
-    <p>Temukan beragam karya di KANVAS, platform penerbitan mandiri untuk kreator indie</p>
-    <a href="#" class="kanvas-button">Ke KANVAS</a>
-  </div>
+        <section class="kanvas-section">
+          <div class="kanvas-info">
+            <h2>KANVAS</h2>
+            <p>
+              Temukan beragam karya di KANVAS, platform penerbitan mandiri untuk
+              kreator indie
+            </p>
+            <a href="#" class="kanvas-button">Ke KANVAS</a>
+          </div>
 
-  <div class="kanvas-gallery">
-    <div class="kn-card">
-      <img src="https://cover.komiku.id/wp-content/uploads/Manga-Dr-Stone.png?resize=240,150" alt="MANIS" />
-      <div class="kn-info">
-        <h4>MANIS</h4>
-        <span>PUCUK FLY</span>
-      </div>
-    </div>
+          <div class="kanvas-gallery">
+            <div class="kn-card">
+              <img
+                src="https://cover.komiku.id/wp-content/uploads/Manga-Dr-Stone.png?resize=240,150"
+                alt="MANIS"
+              />
+              <div class="kn-info">
+                <h4>MANIS</h4>
+                <span>PUCUK FLY</span>
+              </div>
+            </div>
 
-    <div class="kn-card">
-      <img src="https://cover.komiku.id/wp-content/uploads/Manga-Dr-Stone.png?resize=240,150" alt="A Shelter for..." />
-      <div class="kn-info">
-        <h4>A Shelter fo...</h4>
-        <span>chirailyn</span>
-      </div>
-    </div>
+            <div class="kn-card">
+              <img
+                src="https://cover.komiku.id/wp-content/uploads/Manga-Dr-Stone.png?resize=240,150"
+                alt="A Shelter for..."
+              />
+              <div class="kn-info">
+                <h4>A Shelter fo...</h4>
+                <span>chirailyn</span>
+              </div>
+            </div>
 
-    <div class="kn-card">
-      <img src="https://cover.komiku.id/wp-content/uploads/Manga-Dr-Stone.png?resize=240,150" alt="A Shelter for..." />
-      <div class="kn-info">
-        <h4>A Shelter fo...</h4>
-        <span>chirailyn</span>
-      </div>
-    </div>
+            <div class="kn-card">
+              <img
+                src="https://cover.komiku.id/wp-content/uploads/Manga-Dr-Stone.png?resize=240,150"
+                alt="A Shelter for..."
+              />
+              <div class="kn-info">
+                <h4>A Shelter fo...</h4>
+                <span>chirailyn</span>
+              </div>
+            </div>
 
-    <div class="kn-card">
-      <img src="https://cover.komiku.id/wp-content/uploads/Manga-Dr-Stone.png?resize=240,150" alt="A Shelter for..." />
-      <div class="kn-info">
-        <h4>A Shelter fo...</h4>
-        <span>chirailyn</span>
-      </div>
-    </div>
-
-    <!-- Tambahkan kartu lainnya -->
-  </div>
-</section>
-
-
+            <div class="kn-card">
+              <img
+                src="https://cover.komiku.id/wp-content/uploads/Manga-Dr-Stone.png?resize=240,150"
+                alt="A Shelter for..."
+              />
+              <div class="kn-info">
+                <h4>A Shelter fo...</h4>
+                <span>chirailyn</span>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-logo">
+        <img src="asset/logo.png" alt="logo-footer" />
+      </div>
+      <p class="copyright">Copyright @ Komikita id. All right reserved.</p>
+      <div class="footer-links">
+        <a href="#">Baca Komik</a> | <a href="#">Baca Manga</a> |
+        <a href="#">Baca Manhwa</a> | <a href="#">Baca Manhua</a> |
+        <a href="#">DMCA</a> | <a href="#">Terms of Usage</a> |
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Contact Us</a>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
